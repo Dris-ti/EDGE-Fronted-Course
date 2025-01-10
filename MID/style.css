@@ -1,0 +1,1087 @@
+:root{
+  --nav_height: 80px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  border: border-box;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+body{
+  background-color: black;
+}
+
+@keyframes button-animation {
+  from {
+    background-color: #09aff4;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes arrow-animation {
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.all-btn-animation:hover {
+  animation-name: button-animation;
+  animation-duration: 500ms;
+}
+
+.all-btn-animation:hover > .btn-txt {
+  color: #09aff4;
+}
+
+.all-btn-animation:hover > .fa-arrow-right {
+  color: #09aff4;
+  animation-name: arrow-animation;
+  animation-duration: 600ms;
+}
+
+.div-wrap-up {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-name {
+  color: #09aff4;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-bottom: 1.3rem;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.spacer {
+  width: 100%;
+  height: 100px;
+}
+
+/* ==================== NAV ========================= */
+
+.nav {
+  z-index: 10000;
+  width: 100%;
+  height: 80px;
+  background-color: #062241;
+  display: flex;
+  position: fixed;
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  border-bottom: 2px solid #09aff4;
+}
+
+.nav-title {
+  background-image: url(img/logo-light.png);
+  width: 35%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0.6);
+}
+
+.nav-content {
+  height: 100%;
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+}
+
+.nav-content a:hover {
+  color: #09aff4;
+  transform: scale(1.1);
+  transition: 120ms;
+  transition-timing-function: linear;
+}
+
+.nav-last {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-search {
+  transform: scale(1.7);
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-search-input-txt {
+  height: 100%;
+  width: 30%;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* ===================== End of NAV ================= */
+
+/* --------- HOME ------------ */
+
+.div-home {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(5, 0, 75, 0.6),
+      rgba(5, 0, 75, 0.6)
+    ),
+    url(img/pattern-bg-1.jpg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.home-txt {
+  width: 40%;
+  height: 60%;
+  /* background-color:rgb(5, 43, 77); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.social-icons {
+  transform: scale(1.5);
+  padding: 10px 10px 10px 10px;
+}
+
+#fb:hover {
+  color: #09aff4;
+  transform: scale(1.5);
+}
+
+.DOT {
+  transform: scale(0.5);
+  color: #09aff4;
+}
+
+.first-tag {
+  color: #09aff4;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-left: 2.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.second-tag {
+  width: 100%;
+  padding-left: 2.5rem;
+}
+
+.scnd-tag-first-para {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  line-height: 65px;
+  display: inline;
+}
+
+.scnd-tag-scnd-para {
+  color: #09aff4;
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: inline;
+}
+
+.scnd-tag-third-para {
+  font-size: 17px;
+  line-height: 25px;
+  margin-top: 1.3rem;
+}
+
+.home-img {
+  width: 50%;
+  height: 100vh;
+  background-image: url(img/illustration-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0.6);
+}
+
+/* --------End of HOME --------- */
+
+/* ------------------- Services Heading ------------------- */
+
+.div-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-heading {
+  width: 75%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-heading-content-area {
+  width: 35%;
+  height: 100%;
+}
+
+.services-heading-content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.services-heading-all-services {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.services-heading-first-tag {
+  color: #09aff4;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-bottom: 1rem;
+}
+
+.services-heading-second-tag {
+  font-size: larger;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.services-heading-third-tag {
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+}
+
+.all-services-btn {
+  background-color: #09aff4;
+  width: 65%;
+  height: 3rem;
+  border: 2px solid transparent;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-btn-animation:hover {
+  background-color: transparent;
+  border: 2px solid #09aff4;
+  color: #09aff4;
+}
+
+.all-btn-animation:hover i {
+  color: #09aff4;
+}
+
+.btn-txt {
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+/* ------------- End of Services Heading ------------------ */
+
+/* ----------------- OUR WORk ---------------------------- */
+.div-ourwork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourwork-heading {
+  width: 75%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ourwork-heading-content-area {
+  width: 40%;
+  height: 60%;
+}
+
+.ourwork-heading-content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ourwork-heading-all-services {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ourwork-heading-first-tag {
+  color: #09aff4;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  margin-bottom: 1rem;
+}
+
+.ourwork-heading-second-tag {
+  font-size: larger;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.ourwork-heading-third-tag {
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  margin-top: 0.5rem;
+}
+
+.all-ourwork-btn {
+  background-color: #09aff4;
+  width: 65%;
+  height: 3rem;
+  border: 2px solid transparent;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ourwork-grid {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.ourwork-grid-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ourwork-grid-animation {
+  width: 380px;
+  height: 380px;
+  border: 1px solid #09aff4;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-animated-div {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  bottom: -50px;
+  transition: 0.6s;
+}
+
+.product-name {
+  padding: 15px 12px 12px 12px;
+  font-size: 18px;
+}
+
+.work-grid-img {
+  transition: 0.4s;
+  height: 100%;
+}
+
+.ourwork-grid-animation:hover > .work-grid-img {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.ourwork-grid-animation:hover > .work-animated-div {
+  bottom: 0px;
+  transition: transform 0.6s ease;
+}
+
+/* ------------------------End of our work --------------- */
+
+/* ------------------- Services Grid ---------------------- */
+.services-grid {
+  width: 100%;
+  height: 51rem;
+  display: flex;
+  justify-content: center;
+}
+
+.services-grid-content {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-icon {
+  height: 3.2rem;
+  width: 25%;
+  transform: scale(4);
+  transform-origin: top left;
+  margin-bottom: 2rem;
+}
+
+.section-icon-setup {
+  color: #09aff4;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-bottom: 1.5rem;
+}
+
+.section-desc {
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  opacity: 0.75;
+}
+
+.section-read-more {
+  display: flex;
+  margin-top: 2.5rem;
+}
+
+.section-read-more i {
+  color: #09aff4;
+}
+
+.section-read-more p {
+  margin-right: 5px;
+  color: #09aff4;
+  font-weight: 500;
+}
+
+.service-grid-animation {
+  width: 25%;
+  height: 280px;
+  background-color: #09aff4;
+  position: relative;
+  z-index: 1;
+  padding: 2rem 2rem 2rem 2rem;
+  border: 1px solid #09aff4;
+  border-radius: 10px;
+}
+
+.service-grid-animation::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-grid-animation:hover::before {
+  transform-origin: right;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+}
+
+.service-grid-animation:hover > .section-read-more p {
+  color: white;
+}
+
+.service-grid-animation:hover > .section-read-more i {
+  animation-name: arrow-animation;
+  animation-duration: 600ms;
+  color: white;
+}
+
+.service-grid-animation:hover > .section-icon i {
+  color: white;
+}
+
+/* ------------------- End of Services Grid ----------------- */
+
+/* ----------- About Us Grid ------- */
+
+.aboutus {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-main-section {
+  width: 75%;
+  height: 55rem;
+  /* background-color: aqua; */
+  display: flex;
+}
+
+.aboutus-content-area {
+  width: 50%;
+}
+
+.aboutus-img-area {
+  width: 50%;
+  background-image: url(img/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about-us-btn {
+  background-color: #09aff4;
+  width: 30%;
+  height: 3rem;
+  border: 2px solid #09aff4;
+  border-bottom-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-third-div {
+  /* background-color: antiquewhite; */
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.about-us-grid {
+  width: 50%;
+  height: 100px;
+  /* background-color: aquamarine; */
+  display: flex;
+}
+
+.about-us-grid-img-area {
+  width: 60px;
+  height: 60px;
+  border-radius: 8%;
+  background-color: #062241;
+}
+
+.about-us-icon {
+  transform: scale(2);
+  transform-origin: center center;
+  margin-top: 39%;
+  margin-left: 39%;
+}
+
+.about-us-grid-content-area {
+  width: 61%;
+  margin-left: 4%;
+}
+
+.about-us-grid-content-area h3 {
+  /* margin-top: 3%; */
+  margin-bottom: 4%;
+  letter-spacing: 2px;
+}
+
+.about-us-grid-content-area p {
+  opacity: 0.75;
+  font-size: 14px;
+  /* letter-spacing: 2px; */
+  word-spacing: 3px;
+}
+
+/* -----------End of About Us ---------------*/
+
+/* ------------- OUR TEAM ------------------ */
+
+.ourteam {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ourteam-section {
+  height: 10%;
+  width: 75%;
+}
+
+.ourteam-main-section {
+  height: 100%;
+  width: 100%;
+  background-image: url(img/pattern-bg-3.jpg);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.member-slider {
+  height: 100%;
+  width: calc(450px * 18);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: scroller 30s linear infinite;
+}
+
+.member-frame {
+  width: 450px;
+  height: 95%;
+  border-radius: 10px;
+  border: 3px solid #09aff4;
+  background-color: rgba(6, 34, 65, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-img {
+  height: 200px;
+  width: 200px;
+}
+
+.member-img img {
+  height: 200px;
+  border-radius: 50%;
+}
+
+.member-name {
+  margin-top: 4%;
+  margin-bottom: 2.5%;
+}
+
+.member-social-links {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-section {
+  width: 20%;
+}
+
+.social-section i {
+  transform: scale(1.5);
+  justify-content: center;
+  align-content: center;
+  margin: 10px;
+}
+
+@keyframes scroller {
+  100% {
+    transform: translateX(calc(-450px * 9));
+  }
+}
+
+/* ------------- End of OUR TEAM ------------------ */
+
+/* ======================== ABOUT US PAGE ================= */
+.page-header {
+  height: 160px;
+  width: 100%;
+  top: 80px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.aboutus-desc {
+  height: 500px;
+  width: 100%;
+  top: 240px;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-desc p {
+  width: 75%;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  word-spacing: 1.8px;
+  line-height: 30px;
+}
+
+.div-meet-our-team {
+  width: 100%;
+  height: 800px;
+  background-color: black;
+  top: 740px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meet-our-team-header {
+  font-size: 1.5rem;
+}
+
+/* ================= End of ABOUT US PAGE ================= */
+
+/* ======================== CONTACT US PAGE ================= */
+.contact-us {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-form {
+  width: 100%;
+  height: 600px;
+  top: 240px;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 450px;
+  height: 400px;
+  background-color: #062241;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Styles for form group */
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  position: relative;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .Email {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 250px;
+  }
+
+  &:placeholder-shown ~ .Comment {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 325px;
+  }
+}
+
+/* Styles for form label */
+.form__label {
+  position: absolute;
+  /* top: 350px; */
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+/* Styles for form field on focus */
+.form__field:focus {
+  ~ .Email {
+    top: 220px;
+  }
+}
+
+.form__field:focus {
+  ~ .Comment {
+    top: 295px;
+  }
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  padding-bottom: 6px;
+  /* font-weight: 700; */
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+
+.form__field:not(:placeholder-shown) + .form__label {
+  font-size: 0;
+}
+
+/* Reset input styles */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+.submit-btn {
+  margin-top: 50px;
+  width: 253px;
+  height: 40px;
+  background-color: #09aff4;
+  border-radius: 15px;
+  position: absolute;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errmsg {
+  color: red;
+}
+
+/* ================= End of CONTACT US PAGE ================= */
+
+/* ================= ADMIN VIEW PAGE ================= */
+.div-tabs{
+  width: 100%;
+  height: 50px;
+  background-color: #09aff4;
+  color: white;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.div-tabs button{
+  text-decoration: none;
+  color: white;
+  background-color: #09aff4;
+  border-style: none;
+  cursor: pointer;
+  padding: 17px 40px 17px 40px;
+}
+
+.div-tabs button:hover{
+  background-color: #062241;
+}
+
+
+.div-tab-contents{
+  width: 100%;
+  height: calc(100% - 130px);
+  position: absolute;
+  top: 130px;
+  background-color: black;
+}
+
+
+.TAB p{
+  color: black;
+}
+
+.action-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn{
+  width: 50px;
+  height: 20px;
+  background-color: #09aff4;
+  border-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.edit-btn{
+  background-color: #38ef7d;
+}
+
+.delete-btn{
+  background-color: red;
+}
+
+.row-table{
+  width: 100%;
+}
+
+.row-table thead{
+  text-align: center;
+  font-weight: bolder;
+  background-color: #062241;
+  padding: 10px 5px 10px 5px;
+  font-size: 1.2rem;
+}
+
+.row-table tbody{
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+}
+
+.div-new-btn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #09aff4;
+  transform: scale(1.2);
+  padding: 10px 11px 10px 11px;
+  border-radius: 10px;
+}
+
+
+
+/* ================= End of ADMIN VIEW PAGE ================= */
+
+
+
+/* ================= ADMIN VIEW CREATE PAGE ================= */
+
+.div-adminView-action-container{
+  width: 100%;
+  height: 100vh;
+  /* top: 80px; */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.col-table{
+  width: 50vw;
+  /* background-color: #09aff4; */
+}
+
+.col-table td{
+  height: 3vh;
+}
+
+
+.col-table td label{
+  width: 20vw;
+}
+
+.col-table td, input{
+  width: 30vw;
+  border: none;
+}
+
+.col-table input{
+  background-color: #062241;
+}
+
+.adminView-btn{
+  height: 70px;
+  width: 50vw;
+  /* background-color: #11998e; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .adminView-btn a{
+  background-color: #09aff4;
+  border-radius: 10px;
+  padding: 10px 21.5% 10px 21.5%;
+} */
+
+.adminView-create-btn{
+  border: none;
+  background-color: #09aff4;
+  padding: 10px 10.5vw 10px 10.5vw;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+
+
+
+/* ================= End of ADMIN VIEW CREATE PAGE ================= */
+
+
+/* ================= Profile =================== */
+
+.main-profile-container{
+  /* position: absolute; */
+  /* top: var(--nav_height); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-info-box{
+  background-color: gray;
+  height: 70%;
+  width: 50%;
+
+}
